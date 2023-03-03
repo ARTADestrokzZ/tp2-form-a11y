@@ -17,12 +17,16 @@
             <p class="titre">Auberge du jacana africain</p>
         </a>
         <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
-        <p> <a href="../index.html">accueil</a> | <a href="index.html">réservation</a>
+        <p> <a href="../index.html">Accueil</a> | <a href="index.html">Historique</a> | <a href="index.html">Région</a> |
+            <a href="index.html">Contact</a> | <a href="index.html">Réservation</a>
     </header>
 
     <main>
         <h1>Réservation</h1>
         <form id="reservation-form" action="reservation.html">
+            <fieldset class="section">
+            <legend>
+            <p>
             <div class="form-section">
                 <h2>1. Vérifier la disponibilité</h2>
                 <label for="date-arrivee">Date d'arrivée :</label>
@@ -34,13 +38,19 @@
                 <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
                 <p id="availability-message"></p>
             </div>
+            </p>
+            </legend>
+            </fieldset>
 
+            <fieldset class="section">
+            <legend>
+            <p>
             <div class="form-section">
                 <h2>2. Nombre de personnes </h2>
-                <label>Adultes (maximum 4):</label>
+                <label for="adultes">Adultes (maximum 4):</label>
                 <input id="adultes" name="adultes">
 
-                <label>Enfants (maximum 5):</label>
+                <label for="enfants">Enfants (maximum 5):</label>
                 <input id="enfants" name="enfants">
 
                 <p>
@@ -49,7 +59,13 @@
                     2. si vous avez besoin de louer plusieurs chambres, <a href="">contactez-nous directement</a>
                 </p>
             </div>
+            </p>
+            </legend>
+            </fieldset>
 
+            <fieldset class="section">
+            <legend>
+            <p>
             <div class="form-section">
                 <h2>3. Choix chambre et forfait </h2>
 
@@ -63,22 +79,31 @@
                     CAN.</p>
 
             </div>
+            </p>
+            </legend>
+            </fieldset>
 
+            <fieldset class="section">
+            <legend>
+            <p>
             <div class="form-section">
                 <h2>4. Identification</h2>
-                <label>Prénom :</label>
+                <label for="prenom">Prénom :</label>
                 <input id="prenom" name="prenom">
 
-                <label>Nom :</label>
+                <label for="nom">Nom :</label>
                 <input id="nom" name="nom">
 
-                <label>Email :</label>
+                <label for="email">Email :</label>
                 <input id="email" name="email">
 
-                <label>Téléphone :</label>
+                <label for="telephone">Téléphone :</label>
                 <input id="telephone" name="telephone">
 
             </div>
+            </p>
+            </legend>
+            </fieldset>
 
             <p><button type="submit">Confirmer la réservation</button></p>
         </form>
